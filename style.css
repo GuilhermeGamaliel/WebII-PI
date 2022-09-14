@@ -1,0 +1,66 @@
+/*
+Seletores Universais
+Tipo de Seletores
+Classes de seletores
+Pseudo-classes
+Seletores ID
+Estilo Inline
+*/
+
+:root{
+    font-size: 62.5%;
+    box-sizing: border-box;
+
+    --primary-color: #000;
+    --secondary-color: #6200ee;
+    --tertiary-color: #fff;
+
+}
+
+body {
+    margin: 0;
+}
+
+.background-ps{
+    background-image: linear-gradient(to right, var(--primary-color), 
+    var(--secondary-color));
+}
+
+.background-ps{}
+
+h1{
+    font-size: 40px;
+}
+
+#capa{
+    height: 1080px;
+}
+
+#capa #row-capa{
+    position: absolute;
+    margin: 280px 316px;
+
+
+}
+
+#row-capa img {
+    display: inline-block;
+    height: 400px;
+    width: 400px;
+
+    border-radius: 50%;
+    border: 2px solid var(--tertiary-color);
+    box-shadow: var(--tertiary-color) 0 0 10px;
+}
+
+#row-capa h1 {
+    display: inline-block;
+    color: var(--tertiary-color);
+
+    position: relative;
+
+    margin-bottom: 50px;
+
+    top: -190px;
+    left: 50px;
+}
