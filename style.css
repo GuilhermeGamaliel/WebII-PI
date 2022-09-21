@@ -19,6 +19,7 @@ Estilo Inline
 
 body {
     margin: 0;
+    color: var(--tertiary-color);
 }
 
 .background-ps{
@@ -31,6 +32,113 @@ body {
 h1{
     font-size: 40px;
 }
+
+/* Estilização do Menu */
+
+nav {
+    display: inline-block;
+    position: fixed;
+    width: 100%;
+
+
+    background-color: rgba(255, 255, 255, .1);
+    box-shadow: #fff 0 0 15px;
+    z-index: 1;
+}
+
+ul{
+    display: inline-block;
+    float: right;
+
+    margin: 0;
+
+}
+
+li{
+    text-decoration: none;
+    display: inline-block;
+    padding: 1.5rem 3rem;
+    transition: color, background-color .1s;
+}
+
+h2{
+    font-size: 3.5rem;
+    color: var(--tertiary-color);
+}
+
+li:hover {
+    background-color:var(--primary-color);
+
+}
+#Dark-light{
+    display:inline-block;
+    position: relative;
+    margin: 10px;
+    top: 10px;
+}
+
+#Dark-light h2 {
+    display: inline-block;
+    margin-left: 50px;
+
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--tertiary-color);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: var(--secondary-color);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: var(--primary-color);
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px var(--secondary-color);
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+/* Estilização da Capa de Apresentação */
 
 #capa{
     height: 1080px;
@@ -55,7 +163,7 @@ h1{
 
 #row-capa h1 {
     display: inline-block;
-    color: var(--tertiary-color);
+    
 
     position: relative;
 
@@ -64,3 +172,13 @@ h1{
     top: -190px;
     left: 50px;
 }
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  
