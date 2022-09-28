@@ -180,5 +180,21 @@ li:hover {
     width: 60px;
     height: 34px;
   }
+
+.grid-item{
+  text-align: center;
+  margin: 1rem;
+  background-color: coral;
+}
+
+.text{
+  grid-column-start: 2;
+  grid-column-end: 3;
+
+  height: 10rem;
+}
   
-  
+.content {
+  grid-column-start: 2;
+  grid-column-end: 3s;
+}
