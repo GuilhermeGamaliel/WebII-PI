@@ -14,7 +14,7 @@ Estilo Inline
     --primary-color: #000;
     --secondary-color: #6200ee;
     --tertiary-color: #fff;
-
+    --Bfume: var(--tertiary-color)
 }
 
 body {
@@ -199,4 +199,79 @@ li:hover {
 .content {
   grid-column-start: 2;
   grid-column-end: 3s;
+}
+
+/* Portfólio */
+
+#portfolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly; /* alinhamento na horizontal topo e baixo*/
+  align-items: center; /* alinhamento na vertical esquerda e direita*/
+
+  padding-top: 10rem auto; 
+}
+#tecnologias {
+  background-color: var(--Bfume);
+  width: 40%;
+  height: 20rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* alinhamento na horizontal topo e baixo*/
+  align-items: center; /* alinhamento na vertical esquerda e direita*/
+
+}
+#tecnologias select {
+  width: 60%;
+  font-size: 2.5rem;
+
+  color: var(--primary-color);
+  background-color: var(var(--tertiary-color));
+  
+  -webkit-appearance: none;
+  -moz-appearance: none; 
+}
+#tecnologia .row {
+  display: flex;
+  flex-direction: row; 
+}
+#tecnologia .col {
+  display: flex;
+  flex-direction: column;
+}
+#tecnologia input {
+  width: 2 rem;
+  height: 2rem; 
+  
+}
+#tecnologia label {
+  font-size: 2.2rem;
+  color: var(--tertiary-color);
+}
+#tecnologias .center {
+  margin: auto 18rem;
+}
+
+/* Projetos */
+
+#projetos {
+  width: 90%;
+  height: 50rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#projetos slider {
+  display: flex;
+  justify-content: center;
+}
+#projeto .slide {
+
+}
+#projeto img{
+  width: 70%;
+
+  border-radius: 1.2rem 0;
 }
